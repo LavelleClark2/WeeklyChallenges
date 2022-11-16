@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<title> DME Weekly Challenge 3
+</title>
+<body style="background-color: cornflowerblue">
+<h1> Form Question </h1>
+    <form id="myForm">
+    <label for="fname"> First Name: </label><br>
+    <input type="text" id="fname"><br>
+    <label for="lname"> Last Name: </label><br>
+    <input type="text" id="lname"><br>
+    <p>How would you rate your time at this internship?</p>
+  <input type="radio" id="fun" name="fav_language" value="fun">
+  <label for="fun">Fun</label><br>
+  <input type="radio" id="alright" name="fav_language" value="alright">
+  <label for="alright">Alright</label><br>
+  <input type="radio" id="boring" name="fav_language" value="boring">
+  <label for="boring">Boring</label><br>
+    <label for="why">Any reason why you feel this way?</label><br>
+
+<select name="why" id="why">
+  <option value="not enough things to do">Not enough things to do</option>
+  <option value="learning a lot of new things">Learning a lot of new things</option>
+  <option value="i can already do this stuff thanks to school">I can already do this stuff thanks to school</option>
+  <option value="nice way to gain some experience">Nice way to gain some experience</option>
+</select><br>
+    <input type="button" onclick="myfunction()" value="Submit form">
+    </form>
+       <script>
+        function myfunction() {
+        document.getElementById("myForm").submit();
+        }
+        </script>
+    </body>
+</html>
